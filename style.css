@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #007bff;
+}
+
+.info_box,
+.start_btn,
+.quiz_box,
+.result_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.start_btn button {
+  font-size: 25px;
+  font-weight: 500;
+  color: #007bff;
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+.info_box {
+  display: none;
+  width: 540px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.info_box .info_title {
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid #d3d3d3;
+  display: flex;
+  align-items: center;
+  padding: 0 35px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.info_box .info_list {
+  padding: 15px 35px;
+}
+.info_box.info_list.info {
+  margin: 5px 0;
+  font-size: 17px;
+}
+.info_box .buttons {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 35px;
+  border-top: 1px solid #d3d3d3;
+}
+.info_box .buttons button {
+  margin: 0 5px;
+  height: 40px;
+  width: 100px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.restart:hover {
+  background-color: #0263ca;
+}
+.restart {
+  color: #fff;
+  background-color: #007bff;
+}
+.quit {
+  color: #007bff;
+}
+.quit:hover {
+  color: #fff;
+  background-color: #007bff;
+}
+
+.quiz_box {
+  display: none;
+  width: 550px;
+  background: #fff;
+  border-radius: 5px;
+}
+.quiz_box header {
+  position: relative;
+  z-index: 99;
+  height: 70px;
+  padding: 0 30px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.quiz_box header .title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.quiz_box header .timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 145px;
+  height: 45px;
+  background: #cce5ff;
+  border: 1px solid #b8daff;
+  border-radius: 5px;
+  padding: 0 8px;
+}
+.quiz_box header .timer .time_text {
+  font-weight: 400;
+  font-size: 17px;
+  user-select: none;
+}
+.quiz_box header .timer .timer_sec {
+  font-size: 18px;
+  font-weight: 500;
+  background: #343a40;
+  height: 30px;
+  width: 45px;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+  border: 1px solid #343a40;
+  user-select: none;
+}
+
+.quiz_box section {
+  padding: 25px 30px 20px 30px;
+  background: #fff;
+}
+
+.quiz_box section .que_text {
+  font-size: 25px;
+  font-weight: 600;
+}
+.quiz_box section .option_list {
+  padding: 20px 0;
+  display: block;
+}
+section .option_list .option {
+  background: aliceblue;
+  border: 1px solid #84c5fe;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 17px;
+}
+section .option_list .option:hover {
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
+}
+section .option_list .option:last-child {
+  margin-bottom: 0px;
+}
+
+.option_list .option .icon {
+  height: 26px;
+  width: 26px;
+  border: 2px 2px solid transparent;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 13px;
+  line-height: 24px;
+  pointer-events: none;
+}
+.option_list .option .bi-check2-all {
+  border-color: #23903c;
+  color: #23903c;
+
+  border-radius: 50%;
+}
+.option_list .option .bi-x-lg {
+  border-color: #a42834;
+  color: #f7081c;
+
+  border-radius: 100%;
+}
+
+.quiz_box footer {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  padding: 0 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+.quiz_box footer .total_que span {
+  display: flex;
+  user-select: none;
+}
+footer .total_que span p {
+  font-weight: 500;
+  padding: 0 5px;
+}
+.total_que span :first-child {
+  padding-left: 0px;
+}
+
+footer .next_btn {
+  height: 40px;
+  padding: 0 13px;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #007bff;
+  border-radius: 5px;
+  border: 1px solid #007bff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+footer .next_btn:hover {
+  background: #0263ca;
+}
