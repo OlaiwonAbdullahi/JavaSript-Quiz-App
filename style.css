@@ -6,7 +6,7 @@
 }
 
 body {
-  /*background-color: #007bff;*/
+  /*background-color:  #011b1a;*/
   background-image: url(./images/coding-bg.jpg);
 }
 .info_box {
@@ -44,12 +44,12 @@ body {
 .start_btn button {
   font-size: 25px;
   font-weight: 500;
-  color: #007bff;
+  color: #05fff7;
   padding: 15px 30px;
   outline: none;
   border: none;
-  border-radius: 5px;
-  background: #fff;
+  border-radius: 50px;
+  background: #011b1a;
   cursor: pointer;
 }
 .info_box {
@@ -90,26 +90,26 @@ body {
   height: 40px;
   width: 100px;
   outline: none;
-  border: 1px solid #007bff;
-  border-radius: 5px;
+  border: 1px solid #011b1a;
+  border-radius: 50px;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .restart:hover {
-  background-color: #0263ca;
+  background-color: #024d49;
 }
 .restart {
   color: #fff;
-  background-color: #007bff;
+  background-color: #011b1a;
 }
 .quit {
-  color: #007bff;
+  color: #011b1a;
 }
 .quit:hover {
   color: #fff;
-  background-color: #007bff;
+  background-color: #011b1a;
 }
 
 .quiz_box {
@@ -252,14 +252,14 @@ footer .next_btn {
   border: none;
   outline: none;
   color: #fff;
-  background: #007bff;
+  background: #011b1a;
   border-radius: 5px;
-  border: 1px solid #007bff;
+  border: 1px solid #011b1a;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 footer .next_btn:hover {
-  background: #0263ca;
+  background: ##012e2c;
 }
 
 .result_box {
@@ -279,7 +279,7 @@ footer .next_btn:hover {
 
 .result_box .icon {
   font-size: 100px;
-  color: #007bff;
+  color: #011b1a;
   margin-bottom: 10px;
 }
 .result_box .complete_text {
@@ -310,7 +310,7 @@ footer .next_btn:hover {
   font-size: 18px;
   font-weight: 500;
   border-radius: 5px;
-  border: 1px solid #007bff;
+  border: 1px solid #011b1a;
   cursor: pointer;
   transition: all 0.3s ease;
 }
