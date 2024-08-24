@@ -7,7 +7,21 @@
 
 body {
   /*background-color:  #011b1a;*/
-  background-image: url(./images/coding-bg.jpg);
+  background-image: url(./images/coding-bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.header {
+  text-align: center;
+  margin-top: 10rem;
+  color: #011a19;
+  text-shadow: 2px 4px 6px rgba(5, 247, 247, 0.904);
+}
+.header p {
+  font-size: 1.5rem;
 }
 .info_box {
   position: fixed;
