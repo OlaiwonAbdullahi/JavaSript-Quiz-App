@@ -1,5 +1,6 @@
 const questions = [
   {
+    numb: "1",
     question: "What is the difference between `var`, `let`, and `const`?",
     answer:
       "`var` is function-scoped, `let` and `const` are block-scoped, with `const` used for constants.",
@@ -11,6 +12,7 @@ const questions = [
     ],
   },
   {
+    numb: "2",
     question: "How does JavaScript handle asynchronous operations?",
     answer: "JavaScript uses callbacks, promises, and async/await.",
     options: [
@@ -21,6 +23,7 @@ const questions = [
     ],
   },
   {
+    numb: "3",
     question: "What is a closure in JavaScript?",
     answer:
       "A closure is a function that can access variables from its outer function even after the outer function has returned.",
@@ -32,6 +35,7 @@ const questions = [
     ],
   },
   {
+    numb: "4",
     question: "Explain the concept of hoisting in JavaScript.",
     answer:
       "Hoisting is the process where variable and function declarations are moved to the top of their scope before code execution.",
@@ -43,6 +47,7 @@ const questions = [
     ],
   },
   {
+    numb: "5",
     question: "What are JavaScript Promises?",
     answer:
       "Promises represent the eventual completion or failure of an asynchronous operation.",
@@ -54,6 +59,7 @@ const questions = [
     ],
   },
   {
+    numb: "6",
     question: "What does the `this` keyword refer to in JavaScript?",
     answer: "`this` refers to the context in which a function is invoked.",
     options: [
@@ -64,6 +70,7 @@ const questions = [
     ],
   },
   {
+    numb: "7",
     question: "What is the difference between `==` and `===`?",
     answer:
       "`==` checks for value equality with type coercion, while `===` checks for both value and type equality without coercion.",
@@ -75,6 +82,7 @@ const questions = [
     ],
   },
   {
+    numb: "8",
     question: "What is an arrow function in JavaScript?",
     answer:
       "An arrow function is a concise syntax for writing functions, and it does not have its own `this` context.",
@@ -86,6 +94,7 @@ const questions = [
     ],
   },
   {
+    numb: "9",
     question: "How does event delegation work in JavaScript?",
     answer:
       "Event delegation involves using a single event listener on a parent element to handle events on its child elements.",
@@ -97,6 +106,7 @@ const questions = [
     ],
   },
   {
+    numb: "10",
     question: "What is the prototype chain in JavaScript?",
     answer:
       "The prototype chain is the mechanism by which JavaScript objects inherit properties and methods from other objects.",
@@ -108,6 +118,7 @@ const questions = [
     ],
   },
   {
+    numb: "11",
     question: "What are IIFEs (Immediately Invoked Function Expressions)?",
     answer:
       "IIFEs are functions that are executed immediately after being defined.",
@@ -119,6 +130,7 @@ const questions = [
     ],
   },
   {
+    numb: "12",
     question:
       "What is the difference between `call()`, `apply()`, and `bind()`?",
     answer:
@@ -131,6 +143,7 @@ const questions = [
     ],
   },
   {
+    numb: "13",
     question: "What is the Event Loop in JavaScript?",
     answer:
       "The Event Loop handles the execution of code, managing the call stack and the message queue.",
@@ -142,6 +155,7 @@ const questions = [
     ],
   },
   {
+    numb: "14",
     question: "What is the difference between `null` and `undefined`?",
     answer:
       "`undefined` means a variable has been declared but not assigned a value, while `null` is an assignment value representing no value or object.",
@@ -153,6 +167,7 @@ const questions = [
     ],
   },
   {
+    numb: "15",
     question: "What is a JavaScript generator?",
     answer:
       "A generator is a function that can be paused and resumed, allowing you to yield multiple values over time.",
@@ -164,6 +179,7 @@ const questions = [
     ],
   },
   {
+    numb: "16",
     question: "How does JavaScript handle inheritance?",
     answer:
       "JavaScript uses prototype-based inheritance, where objects inherit properties and methods from other objects via the prototype chain.",
@@ -175,6 +191,7 @@ const questions = [
     ],
   },
   {
+    numb: "17",
     question: "What is a JavaScript Symbol?",
     answer:
       "A Symbol is a unique and immutable primitive value often used as object keys to avoid property name collisions.",
@@ -186,6 +203,7 @@ const questions = [
     ],
   },
   {
+    numb: "18",
     question: "What is the spread operator in JavaScript?",
     answer:
       "The spread operator (`...`) allows an iterable to be expanded into individual elements.",
@@ -197,6 +215,7 @@ const questions = [
     ],
   },
   {
+    numb: "19",
     question: "What is debouncing in JavaScript?",
     answer:
       "Debouncing delays the execution of a function until a certain time has passed since the last time it was called.",
@@ -208,6 +227,7 @@ const questions = [
     ],
   },
   {
+    numb: "20",
     question: "What is a Proxy in JavaScript?",
     answer:
       "A Proxy allows you to create custom behavior for fundamental operations on an object.",
@@ -219,6 +239,7 @@ const questions = [
     ],
   },
   {
+    numb: "21",
     question:
       "What is the difference between function declarations and function expressions?",
     answer:
@@ -231,6 +252,7 @@ const questions = [
     ],
   },
   {
+    numb: "22",
     question: "What are JavaScript callbacks?",
     answer:
       "Callbacks are functions passed as arguments to other functions and are executed after a specific task is completed.",
@@ -242,6 +264,7 @@ const questions = [
     ],
   },
   {
+    numb: "23",
     question:
       "What is the difference between deep copy and shallow copy in JavaScript?",
     answer:
@@ -254,6 +277,7 @@ const questions = [
     ],
   },
   {
+    numb: "24",
     question:
       "What is the difference between synchronous and asynchronous JavaScript?",
     answer:
@@ -266,6 +290,7 @@ const questions = [
     ],
   },
   {
+    numb: "25",
     question: "What are higher-order functions in JavaScript?",
     answer:
       "Higher-order functions are functions that take other functions as arguments or return a function as a result.",
@@ -277,6 +302,7 @@ const questions = [
     ],
   },
   {
+    numb: "26",
     question: "How does the `new` keyword work in JavaScript?",
     answer:
       "The `new` keyword creates an instance of an object from a constructor function.",
@@ -288,6 +314,7 @@ const questions = [
     ],
   },
   {
+    numb: "27",
     question: "What is the Temporal Dead Zone in JavaScript?",
     answer:
       "The Temporal Dead Zone is the period between the start of a block and when a variable declared with `let` or `const` is initialized.",
@@ -299,6 +326,7 @@ const questions = [
     ],
   },
   {
+    numb: "28",
     question: "What is event bubbling in JavaScript?",
     answer:
       "Event bubbling is the process by which an event starts from the deepest element and propagates upwards to the parent elements.",
@@ -310,6 +338,7 @@ const questions = [
     ],
   },
   {
+    numb: "29",
     question: "What is the purpose of the `bind()` method in JavaScript?",
     answer:
       "`bind()` creates a new function that, when called, has its `this` keyword set to the provided value.",
@@ -321,6 +350,7 @@ const questions = [
     ],
   },
   {
+    numb: "30",
     question: "What is the purpose of the `setTimeout()` function?",
     answer:
       "`setTimeout()` delays the execution of a function by a specified number of milliseconds.",
@@ -332,6 +362,7 @@ const questions = [
     ],
   },
   {
+    numb: "31",
     question: "What is the purpose of the `typeof` operator in JavaScript?",
     answer:
       "`typeof` is used to determine the type of a variable or expression.",
@@ -343,6 +374,7 @@ const questions = [
     ],
   },
   {
+    numb: "32",
     question: "What is the difference between `for...in` and `for...of` loops?",
     answer:
       "`for...in` iterates over object properties, while `for...of` iterates over iterable objects like arrays.",
@@ -354,6 +386,7 @@ const questions = [
     ],
   },
   {
+    numb: "33",
     question: "What is a promise in JavaScript?",
     answer:
       "A promise is an object representing the eventual completion or failure of an asynchronous operation.",
@@ -365,6 +398,7 @@ const questions = [
     ],
   },
   {
+    numb: "34",
     question: "What is the purpose of the `Array.prototype.map()` method?",
     answer:
       "`map()` creates a new array populated with the results of calling a provided function on every element in the original array.",
@@ -376,6 +410,7 @@ const questions = [
     ],
   },
   {
+    numb: "35",
     question:
       "How does JavaScript handle equality checks with objects and arrays?",
     answer:
@@ -388,6 +423,7 @@ const questions = [
     ],
   },
   {
+    numb: "36",
     question: "What does the `fetch()` API do in JavaScript?",
     answer:
       "`fetch()` is used to make HTTP requests and returns a promise that resolves to the response object.",
@@ -399,6 +435,7 @@ const questions = [
     ],
   },
   {
+    numb: "37",
     question: "What is the purpose of the `Object.freeze()` method?",
     answer:
       "`Object.freeze()` prevents the modification of existing property values and the addition of new properties to an object.",
@@ -410,6 +447,7 @@ const questions = [
     ],
   },
   {
+    numb: "38",
     question: "What is the purpose of the `reduce()` method in JavaScript?",
     answer:
       "`reduce()` executes a reducer function on each element of the array, resulting in a single output value.",
@@ -421,6 +459,7 @@ const questions = [
     ],
   },
   {
+    numb: "39",
     question: "What does the `async` keyword do in JavaScript?",
     answer:
       "`async` is used to declare functions that return a promise, allowing the use of `await` within them.",
@@ -432,6 +471,7 @@ const questions = [
     ],
   },
   {
+    numb: "40",
     question: "What is the purpose of the `await` keyword?",
     answer:
       "`await` is used to pause the execution of an `async` function until a promise is resolved or rejected.",
@@ -443,6 +483,7 @@ const questions = [
     ],
   },
   {
+    numb: "41",
     question: "What does the `Array.prototype.filter()` method do?",
     answer:
       "`filter()` creates a new array with all elements that pass a test implemented by a provided function.",
@@ -454,6 +495,7 @@ const questions = [
     ],
   },
   {
+    numb: "42",
     question: "What is the purpose of the `Object.assign()` method?",
     answer:
       "`Object.assign()` copies all enumerable properties from one or more source objects to a target object.",
@@ -465,6 +507,7 @@ const questions = [
     ],
   },
   {
+    numb: "43",
     question:
       "What is the difference between `Array.prototype.find()` and `Array.prototype.findIndex()`?",
     answer:
@@ -477,6 +520,7 @@ const questions = [
     ],
   },
   {
+    numb: "44",
     question: "What does the `Array.prototype.some()` method do?",
     answer:
       "`some()` tests whether at least one element in the array passes the test implemented by a provided function.",
@@ -488,6 +532,7 @@ const questions = [
     ],
   },
   {
+    numb: "45",
     question: "What does the `Array.prototype.every()` method do?",
     answer:
       "`every()` tests whether all elements in the array pass the test implemented by a provided function.",
@@ -499,6 +544,7 @@ const questions = [
     ],
   },
   {
+    numb: "46",
     question:
       "What is the difference between `Array.prototype.splice()` and `Array.prototype.slice()`?",
     answer:
@@ -511,6 +557,7 @@ const questions = [
     ],
   },
   {
+    numb: "47",
     question: "What does the `Array.prototype.includes()` method do?",
     answer:
       "`includes()` checks if an array contains a specified element, returning `true` or `false`.",
@@ -522,6 +569,7 @@ const questions = [
     ],
   },
   {
+    numb: "48",
     question: "What does the `Object.create()` method do?",
     answer:
       "`Object.create()` creates a new object with a specified prototype object and properties.",
@@ -533,6 +581,7 @@ const questions = [
     ],
   },
   {
+    numb: "49",
     question: "What is the purpose of the `JSON.stringify()` method?",
     answer:
       "`JSON.stringify()` converts a JavaScript object or value to a JSON string.",

@@ -26,8 +26,12 @@ let que_count = 0;
 //next btn clicked
 const next_btn = quiz_box.querySelector(".next_btn");
 next_btn.onclick = () => {
-  que_count++;
-  showQuestion(que_count);
+  if (que_count < questions.length - 1) {
+    que_count++;
+    showQuestion(que_count);
+  } else {
+    console.log("question completed");
+  }
 };
 
 //getting question from array
@@ -35,7 +39,12 @@ function showQuestion(index) {
   const que_text = document.querySelector(".que_text");
   const option_list = document.querySelector(".option_list");
 
-  let que_tag = "<span>" + questions[index].question + "</span>";
+  let que_tag =
+    "<span>" +
+    questions[index].numb +
+    "." +
+    questions[index].question +
+    "</span>";
 
   let option_tag =
     '<div class="option"><span>' +
