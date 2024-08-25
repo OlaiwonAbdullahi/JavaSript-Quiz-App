@@ -246,7 +246,25 @@ section .option_list .option:last-child {
 
   border-radius: 100%;
 }
-
+.option_list .option.correct {
+  border-color: #23903c;
+  color: #23903c;
+}
+.option_list .option.incorrect {
+  border-color: #a42834;
+  color: #f7081c;
+}
+.option_list .option.correct:hover {
+  background-color: #024d49;
+  color: #fff;
+}
+.option_list .option.incorrect:hover {
+  background-color: #a42834;
+  color: #343a40;
+}
+.option_list .option.disabled {
+  pointer-events: none;
+}
 .quiz_box footer {
   height: 60px;
   width: 100%;

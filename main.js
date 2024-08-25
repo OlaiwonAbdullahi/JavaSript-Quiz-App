@@ -5,6 +5,9 @@ const continue_btn = info_box.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
 const myH1 = document.getElementById("myH1");
 let username = window.prompt("please what's your name");
+const timeCount = quiz_box.querySelector(".timer .timer_sec");
+
+const option_list = document.querySelector(".option_list");
 
 myH1.textContent = `👋Hey ${username}`;
 start_btn.onclick = () => {
@@ -41,7 +44,6 @@ next_btn.onclick = () => {
 //getting question from array
 function showQuestion(index) {
   const que_text = document.querySelector(".que_text");
-  const option_list = document.querySelector(".option_list");
 
   let que_tag =
     "<span>" +
@@ -73,9 +75,37 @@ function showQuestion(index) {
   }
 }
 
+let tickIcon = '<i class="bi bi-check2-all"></i>';
+let crossIcon = '<i class="bi bi-x-lg"></i>';
+
 function optionSelected(answer) {
   let userAns = answer.textContent;
-  console.log(userAns);
+  let correctAns = questions[que_count].answer;
+  let allOptions = option_list.children.length;
+  if (userAns == correctAns) {
+    answer.classList.add("correct");
+    console.log("Answer is correct");
+    answer.insertAdjacentHTML("beforeend", tickIcon);
+  } else {
+    answer.classList.add("incorrect");
+    console.log("answer is wrong");
+    answer.insertAdjacentHTML("beforeend", crossIcon);
+
+    //if answer is incorrect then select the correct answer
+
+    for (let i = 0; i < allOptions; i++) {
+      if (option_list.children[i].textContent == correctAns) {
+        option_list.children[i].setAttribute("class", "option correct");
+        option_list.children[i].insertAdjacentHTML("beforeend", tickIcon);
+      }
+    }
+  }
+
+  //once user selected disable all option
+
+  for (let i = 0; i < allOptions; i++) {
+    option_list.children[i].classList.add("disabled");
+  }
 }
 
 function queCounter(index) {
