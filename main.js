@@ -6,7 +6,7 @@ const quiz_box = document.querySelector(".quiz_box");
 const myH1 = document.getElementById("myH1");
 let username = window.prompt("please what's your name");
 const timeCount = quiz_box.querySelector(".timer .timer_sec");
-const timeLine = quiz_box.querySelector(".timer .timer_line");
+const timeLine = quiz_box.querySelector("header .time_line");
 
 const option_list = document.querySelector(".option_list");
 
@@ -25,15 +25,21 @@ continue_btn.onclick = () => {
   showQuestion(0);
   queCounter(1);
   starttimer(10);
+  startTimerLine(0);
 };
 
 let que_count = 0;
 let que_numb = 1;
 let couter;
 let timeValue = 10;
+let widthValue = 0;
+let userScore = 0;
 
 //next btn clicked
 const next_btn = quiz_box.querySelector(".next_btn");
+const result_box = document.querySelector(".result_box");
+const restart_quiz = result_box.querySelector(".buttons .restart");
+const quit_quiz = result_box.querySelector(".buttons .quit");
 next_btn.onclick = () => {
   if (que_count < questions.length - 1) {
     que_count++;
@@ -42,8 +48,12 @@ next_btn.onclick = () => {
     queCounter(que_numb);
     clearInterval(counter);
     starttimer(timeValue);
+    clearInterval(counterLine);
+    startTimerLine(widthValue);
+    //next_btn.style.display = "none";
   } else {
     console.log("question completed");
+    showResultBox();
   }
 };
 
@@ -86,11 +96,14 @@ let crossIcon = '<i class="bi bi-x-lg"></i>';
 
 function optionSelected(answer) {
   clearInterval(counter);
-
+  clearInterval(counterLine);
   let userAns = answer.textContent;
   let correctAns = questions[que_count].answer;
   let allOptions = option_list.children.length;
+  userScore += 1;
   if (userAns == correctAns) {
+    userScore += 1;
+    console.log(userScore);
     answer.classList.add("correct");
     console.log("Answer is correct");
     answer.insertAdjacentHTML("beforeend", tickIcon);
@@ -116,6 +129,17 @@ function optionSelected(answer) {
   }
 }
 
+function showResultBox() {
+  info_box.classList.add("activeInfo");
+  quit_quiz.classList.remove("activeQuiz");
+  result_box.classList.add("activeResult");
+  const scoreText = result_box.querySelector(".score_text");
+  if (userScore > 30) {
+    let scoreTag =
+      "<span>You got <p>'+ userScore + '</p> out of <p>5</p></span>";
+  }
+}
+
 function starttimer(time) {
   counter = setInterval(timer, 1000);
   function timer() {
@@ -128,6 +152,17 @@ function starttimer(time) {
     if (time < 0) {
       clearInterval(counter);
       timeCount.textContent = "00";
+    }
+  }
+}
+
+function startTimerLine(time) {
+  counterLine = setInterval(timer, 29);
+  function timer() {
+    time += 1;
+    timeLine.style.width = time + "px";
+    if (time > 549) {
+      clearInterval(counterLine);
     }
   }
 }
