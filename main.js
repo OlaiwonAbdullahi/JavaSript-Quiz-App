@@ -18,13 +18,33 @@ exit_btn.onclick = () => {
 continue_btn.onclick = () => {
   info_box.classList.remove("activeInfo");
   quiz_box.classList.add("activeQuiz");
-  showQuestion();
+  showQuestion(5);
 };
 
 let que_count = 0;
 
-function showQuestion() {
+function showQuestion(index) {
   const que_text = document.querySelector(".que_text");
-  let que_tag = "<span>" + questions[0].question + "</span>";
+  const option_list = document.querySelector(".option_list");
+  let que_tag = "<span>" + questions[index].question + "</span>";
+
+  let option_tag =
+    '<div class="option"><span>' +
+    questions[index] +
+    options[0] +
+    "</span></div>" +
+    '<div class="option"><span>' +
+    questions[index] +
+    options[1] +
+    "</span></div>";
+  '<div class="option"><span>' +
+    questions[index] +
+    options[2] +
+    "</span></div>";
+  '<div class="option"><span>' +
+    questions[index] +
+    options[3] +
+    "</span></div>";
   que_text.innerHTML = que_tag;
+  option_list.innerHTML = option_tag;
 }

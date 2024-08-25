@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -14,11 +14,20 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
 }
+
+.overlay {
+  height: 100vh;
+  background: rgba(10, 222, 249, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  padding-top: 5rem;
+}
 .header {
   text-align: center;
-  margin-top: 10rem;
-  color: #011a19;
-  text-shadow: 2px 4px 6px rgba(5, 247, 247, 0.904);
+  /* margin-top: 10rem;*/
+  color: #011b1a;
 }
 .header p {
   font-size: 1.5rem;
