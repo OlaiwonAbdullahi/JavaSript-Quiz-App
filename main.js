@@ -196,11 +196,13 @@ function starttimer(time) {
     if (time < 9) {
       let addZero = timeCount.textContent;
       timeCount.textContent = "0" + addZero;
+      timeOff.textContent = "Time Left";
     }
     if (time < 0) {
       clearInterval(counter);
-      timeCount.textContent = "00";
       timeOff.textContent = "Time Off";
+      timeCount.textContent = "00";
+
       let correctAns = questions[que_count].answer;
       let allOptions = option_list.children.length;
 
