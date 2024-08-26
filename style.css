@@ -373,7 +373,7 @@ footer .next_btn:hover {
   outline: none;
   font-size: 18px;
   font-weight: 500;
-  border-radius: 5px;
+  border-radius: 50px;
   border: 1px solid #011b1a;
   cursor: pointer;
   transition: all 0.3s ease;
