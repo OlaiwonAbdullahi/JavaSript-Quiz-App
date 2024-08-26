@@ -161,7 +161,14 @@ function showResultBox() {
   quit_quiz.classList.remove("activeQuiz");
   result_box.classList.add("activeResult");
   const scoreText = result_box.querySelector(".score_text");
-  if (userScore > 30) {
+
+  scoreText.innerHTML =
+    "<span> congrat You got  <p>" +
+    userScore +
+    "</p> out of <p>" +
+    question.length +
+    "</p></span>";
+  /*if (userScore > 30) {
     let scoreTag =
       "<span> congrat You got  <p>" +
       userScore +
@@ -185,7 +192,7 @@ function showResultBox() {
       question.length +
       "</p></span>";
     scoreText.innerHTML = scoreTag;
-  }
+  }*/
 }
 
 function starttimer(time) {
