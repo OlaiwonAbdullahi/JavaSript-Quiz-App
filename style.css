@@ -167,7 +167,7 @@ body {
   justify-content: space-between;
   width: 145px;
   height: 45px;
-  background: #cce5ff;
+  background: #04a08b;
   border: 1px solid #b8daff;
   border-radius: 5px;
   padding: 0 8px;
@@ -214,7 +214,7 @@ body {
 }
 section .option_list .option {
   background: aliceblue;
-  border: 1px solid #84c5fe;
+  border: 1px solid #033120;
   padding: 8px 15px;
   border-radius: 5px;
   margin-bottom: 15px;
@@ -225,9 +225,9 @@ section .option_list .option {
   font-size: 17px;
 }
 section .option_list .option:hover {
-  color: #004085;
+  color: #011429;
   background-color: #cce5ff;
-  border-color: #b8daff;
+  border-color: #c9dff7;
 }
 section .option_list .option:last-child {
   margin-bottom: 0px;
