@@ -294,6 +294,20 @@ footer .total_que span p {
   padding-left: 0px;
 }
 
+footer .quit_btn {
+  height: 40px;
+  padding: 0 13px;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  color: #011b1a;
+  background: #fff;
+  border-radius: 50px;
+  border: 1px solid #011b1a;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 footer .next_btn {
   height: 40px;
   padding: 0 13px;
@@ -303,7 +317,7 @@ footer .next_btn {
   outline: none;
   color: #fff;
   background: #011b1a;
-  border-radius: 5px;
+  border-radius: 50px;
   border: 1px solid #011b1a;
   cursor: pointer;
   transition: all 0.3s ease;
