@@ -162,7 +162,7 @@ function showResultBox() {
   result_box.classList.add("activeResult");
   const scoreText = result_box.querySelector(".score_text");
 
-  scoreText.innerHTML =
+  scoreText.textContent =
     "<span> congrat You got  <p>" +
     userScore +
     "</p> out of <p>" +
